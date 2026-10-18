@@ -255,13 +255,3 @@ lightning_module = UTAELightning(
     pos_class_weight=10.0,
 )
 ```
-
-### 6.4. Chạy Bộ Kiểm Thử Đầy Đủ
-
-```bash
-# Chạy demo kiểm tra toàn diện
-python test_demo.py
-
-# Chạy toàn bộ Unit test
-python test_suite.py
-```
