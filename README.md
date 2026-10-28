@@ -45,9 +45,9 @@ Shape: (B, T, C, H, W) + DOY (B, T)
 │ 3. DINOv3FeatureNeck                                   │
 │    Projects & resizes features for UTAE Decoder:       │
 │    - Stage 0: 1x  (H, W)       -> channels[0] (64)     │
-│    - Stage 1: 1/2x (H/2, W/2)   -> channels[1] (64)     │
-│    - Stage 2: 1/4x (H/4, W/4)   -> channels[2] (64)     │
-│    - Stage 3: 1/8x (H/8, W/8)   -> channels[3] (128)    │
+│    - Stage 1: 1/2x (H/2, W/2)  -> channels[1] (64)     │
+│    - Stage 2: 1/4x (H/4, W/4)  -> channels[2] (64)     │
+│    - Stage 3: 1/8x (H/8, W/8)  -> channels[3] (128)    │
 └───────────┬────────────────────────────────┬───────────┘
             │ Skip connections               │ Bottleneck features
             │ (Stage 0, 1, 2)                │ (Stage 3: B, T, 128, H/8, W/8)
